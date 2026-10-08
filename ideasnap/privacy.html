@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f8f4f0">
+<title>プライバシーポリシー — IdeaSnap</title>
+<style>
+:root{color-scheme:light;--ink:#252523;--muted:#696762;--paper:#f8f4f0;--card:#fffdfa;--line:#e6ddd4;--accent:#d96458}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI",Meiryo,sans-serif;line-height:1.8}main{max-width:760px;margin:auto;padding:26px 22px 70px}.mark{display:inline-flex;align-items:center;gap:10px;font-weight:750;text-decoration:none;color:var(--ink)}.symbol{width:36px;height:36px;border-radius:12px;background:var(--accent);display:grid;place-items:center;color:white}.eyebrow{margin-top:54px;color:var(--accent);font-size:.83rem;font-weight:700;letter-spacing:.08em}h1{font-size:clamp(2rem,7vw,3.2rem);line-height:1.2;letter-spacing:-.04em;margin:.25em 0}.updated{color:var(--muted);font-size:.9rem}h2{font-size:1.2rem;line-height:1.4;margin:2.2em 0 .5em}p,li{color:#4f4d49}ul{padding-left:1.3em}li+li{margin-top:.35em}.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:20px 0}a{color:#9c3e35}nav{display:flex;flex-wrap:wrap;gap:16px;border-top:1px solid var(--line);margin-top:48px;padding-top:20px;font-size:.92rem}footer{margin-top:32px;color:var(--muted);font-size:.82rem}
+</style></head><body><main>
+<a class="mark" href="index.html"><span class="symbol" aria-hidden="true">✳</span><span>IdeaSnap</span></a>
+<p class="eyebrow">PRIVACY</p><h1>プライバシーポリシー</h1><p class="updated">最終更新日：2026年10月8日</p>
+<div class="panel"><strong>このページについて</strong><p>この文書は公開準備中の草案です。広告SDKの本番設定、アカウント削除処理、報告対応の運用と保存期間をサーバー上で確認してから公開します。</p></div>
+<p>IdeaSnapでは、保存した内容を端末内で管理する機能と、希望する方が使うグループ共有機能を提供します。機能によって扱う情報と保存場所が異なります。</p>
+<h2>端末内に保存する情報</h2>
+<p>リンクのURL、文章、メモ、画像、リスト名や並び順など、ユーザーが保存・入力した内容は端末内に保存されます。共有拡張で受け取った内容も、保存操作後は端末内に取り込まれます。個人の保存内容を当社のサーバーへ自動同期する機能はありません。アプリの削除や端末のバックアップ設定による保存状態は、iOSの動作と設定に従います。</p>
+<h2>グループ共有とサインイン</h2>
+<p>グループ機能を使う場合に限り、Appleでサインインした認証情報を認証サービスへ送信します。認証セッションは端末のKeychainに保存されます。グループ名、参加者を識別するID、招待の状態、有効期限、ユーザーが共有を選んだURLをSupabaseのサーバーに保存し、同じグループの参加者に表示します。個人のメモ、タイトル、画像添付はグループ共有しません。</p>
+<p>共有リンクのイベント候補を確認するとき、端末から共有URLの公開ページへ通信し、ページ内の公開JSON-LDイベント情報を読み取ります。個人メモや添付画像はこの通信に含めません。接続先のサイトは通常の通信情報（例：接続元IPアドレス）を受け取る場合があります。</p>
+<h2>報告・非表示・ブロック</h2>
+<p>共有リンクを報告すると、共有URL、報告理由、任意の補足、グループおよび報告に関係するアカウント識別子がモデレーション記録としてサーバーに送られます。報告したリンクは報告者の画面で非表示になります。ブロック設定により、同じグループで対象メンバーの共有リンクを表示しないようにします。</p>
+<p>報告は運営だけが利用できる管理機能で確認し、対象リンクの全体非表示、報告の却下、リンクと関連報告の削除、ドメイン単位の共有禁止を行える設計です。報告者または対象の共有者がアカウントを削除した場合、関係する報告もURL、理由、補足を含めて削除します。通常時の報告記録の保存期間、確認担当、確認頻度と応答目標は未確定であり、公開前に運用を確定します。</p>
+<h2>広告と同意の設定</h2>
+<p>無料版では、Google Mobile Ads SDKとGoogle User Messaging Platform（UMP）を利用します。現在の製品設計では、複数回の保存後に、個人リスト内へ広告を表示します。UMPが広告リクエストを許可した場合だけSDKを開始し、アプリはパーソナライズを無効、パブリッシャーのファーストパーティIDを無効、各広告リクエストを非パーソナライズ広告（NPA）指定にします。Premiumが有効な場合は広告を表示しません。必要な地域・設定では、設定画面からGoogleのプライバシー選択を開けます。</p>
+<p>GoogleのSDKは広告配信や測定のため、IPアドレス、端末ID、広告表示・操作情報、診断情報やパフォーマンス情報などを扱う場合があります。Google Mobile Ads 13.11.0に同梱されるPrivacy manifestは、粗い位置情報、Device ID、広告データ、製品操作、診断・クラッシュ・性能情報を申告し、Device IDをTracking=trueとして宣言しています。UMPのmanifestは粗い位置情報、製品操作、性能情報を申告しています。アプリのソースではApp Tracking Transparencyの許可要求を確認できていません。NPA指定は広告内容のパーソナライズを無効にする設定ですが、SDKの通信や測定をすべて停止すること、またはApp Store上の「追跡しない」を単独で証明するものではありません。現在の広告リクエストに保存URLやメモをカスタムターゲティングとして付加する実装は確認していません。対象SDKの最新資料と最終ArchiveのPrivacy Report・実機挙動を確認してApp Storeの申告を確定します。詳細は<a href="https://developers.google.com/admob/ios/privacy/data-disclosure?hl=en">Google Mobile Ads SDKのデータ開示</a>をご確認ください。</p>
+<p>アプリ内では広告表示回数と広告収益イベントの合計値を端末の設定領域に記録します。これらの合計値を当社の分析サーバーへ送信する実装はありません。Google SDK自身の広告通信・測定は別に発生します。</p>
+<h2>購入</h2>
+<p>IdeaSnap PremiumはStoreKitを通じた買い切り商品の予定です。購入情報と権利状態はAppleのApp Storeが処理し、アプリはStoreKitから商品情報と購入状態を受け取ります。当社は決済カード情報を受け取りません。商品登録・本番購入フローの確認後、この説明とストア表示を確定します。</p>
+<h2>アカウントとデータの削除</h2>
+<p>グループ機能のアカウントは、アプリ内の「設定」からAppleで本人確認して削除する設計です。サーバー処理はAppleの連携を解除し、そのSupabaseアカウントを削除して、参加情報・共有リンク・招待・関係する報告・非表示設定・ブロック設定をデータベースの連鎖削除で消します。自分が管理するグループを削除するとグループ全体が消えます。端末内の個人保存とリストは残り、アプリ内で個別に削除できます。サーバーへの適用と実アカウントによる削除結果は未確認です。確認が完了するまで本ページは草案です。</p>
+<h2>第三者サービス</h2>
+<ul><li>Apple：サインイン認証とStoreKit購入処理</li><li>Supabase：任意のグループアカウントと共有データ</li><li>Google Mobile Ads / UMP：同意状態に応じた広告とプライバシー選択</li><li>共有リンク先のWebサイト：ユーザーがイベント候補確認を開始した場合の公開ページ取得</li></ul>
+<h2>お問い合わせ</h2><p>本ポリシーやデータの取り扱いについては、<a href="support.html">サポート・お問い合わせ</a>からご連絡ください。</p>
+<nav aria-label="関連ページ"><a href="index.html">IdeaSnapトップ</a><a href="support.html">サポート</a><a href="terms.html">利用条件</a></nav><footer>IdeaSnap — リンクとアイデア</footer>
+</main></body></html>
