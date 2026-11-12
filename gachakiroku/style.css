@@ -1,0 +1,21 @@
+/* Gacha Kiroku public information pages */
+:root { color-scheme: dark; --bg:#0B1020; --fg:#E8EDF5; --link:#C4B5FD; --muted:#B8C2D3; --line:#39445A; --focus:#FDE68A; }
+* { box-sizing:border-box; }
+html { background:var(--bg); scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--fg); font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI",Meiryo,sans-serif; font-size:17px; line-height:1.8; }
+main { width:min(100% - 36px, 68ch); margin:0 auto; padding:32px 0 56px; }
+header { padding-bottom:18px; border-bottom:1px solid var(--line); }
+nav { display:flex; flex-wrap:wrap; gap:8px 22px; margin-bottom:26px; }
+a { color:var(--link); text-decoration-thickness:.08em; text-underline-offset:.18em; }
+a:hover { text-decoration-thickness:.14em; }
+a:focus-visible { outline:3px solid var(--focus); outline-offset:4px; border-radius:2px; }
+h1 { font-size:clamp(1.7rem,5vw,2.15rem); line-height:1.35; letter-spacing:.01em; margin:.2em 0 .5em; }
+h2 { font-size:1.25rem; line-height:1.5; margin:2em 0 .5em; }
+h3 { font-size:1.05rem; line-height:1.5; margin:1.5em 0 .35em; }
+p, ul { margin:.6em 0 1em; }
+li+li { margin-top:.3em; }
+.meta, footer { color:var(--muted); font-size:.92rem; }
+footer { margin-top:3em; padding-top:1.2em; border-top:1px solid var(--line); }
+strong { color:var(--fg); }
+@media (max-width:380px) { main { width:calc(100% - 28px); padding-top:22px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } * { animation-duration:.01ms !important; transition-duration:.01ms !important; } }
